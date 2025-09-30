@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZapFollowers - Elevate Your Social Presence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#6366F1', // Indigo 500
+              'brand-secondary': '#EC4899', // Pink 500
+              'brand-light': '#818CF8',
+              'dark-bg': '#F9FAFB', // Gray 50 (light background)
+              'dark-card': '#FFFFFF', // White (card background)
+              'dark-border': '#E5E7EB', // Gray 200 (border color)
+              'light-text': '#1F2937', // Gray 800 (dark text)
+              'medium-text': '#6B7280', // Gray 500 (medium text)
+            },
+            animation: {
+                'gradient-x': 'gradient-x 15s ease infinite',
+            },
+            keyframes: {
+                'gradient-x': {
+                    '0%, 100%': {
+                        'background-size':'200% 200%',
+                        'background-position': 'left center'
+                    },
+                    '50%': {
+                        'background-size':'200% 200%',
+                        'background-position': 'right center'
+                    }
+                }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-dark-bg text-light-text antialiased">
+    <div id="root"></div>
+  </body>
+</html>
